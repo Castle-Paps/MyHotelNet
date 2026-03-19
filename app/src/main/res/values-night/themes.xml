@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.MyHotelNet" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/morado3</item>
+        <item name="colorSecondary">@color/amarillo2</item>
+        <item name="colorPrimaryDark">@color/morado1</item>
+    </style>
+</resources>

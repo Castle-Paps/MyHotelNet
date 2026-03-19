@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIdReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/subtitulo"/>
+
+            <TextView
+                android:id="@+id/tvHotelReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/output"/>
+
+            <TextView
+                android:id="@+id/tvFechasReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/plomo"
+                style="@style/input"/>
+
+            <TextView
+                android:id="@+id/tvTotalReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/morado3"
+                style="@style/subtitulo"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEstadoReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textSize="10sp"
+            android:textColor="@color/azul2"
+            android:background="@drawable/elipse"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

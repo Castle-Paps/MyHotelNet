@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTituloReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hacer reserva"
+        android:layout_marginBottom="16dp"
+        style="@style/titulo"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCheckin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Check-in (dd/mm/yyyy)"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietCheckin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            style="@style/input"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Check-out (dd/mm/yyyy)"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            style="@style/input"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de personas"
+        android:layout_marginBottom="8dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            style="@style/input"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvTotalReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: S/ 0"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        style="@style/subtitulo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/verde1"
+            app:icon="@drawable/ic_checked"
+            android:layout_marginEnd="8dp"
+            style="@style/boton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelarReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/naranja1"
+            app:icon="@drawable/ic_cancelar"
+            style="@style/boton"/>
+    </LinearLayout>
+</LinearLayout>

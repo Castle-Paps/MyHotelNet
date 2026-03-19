@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HotelNet</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_noticias">Noticias</string>
+    <string name="menu_reservas">Mis Reservas</string>
+    <string name="menu_perfil">Mi Perfil</string>
+    <string name="hello_blank_fragment">Fragment</string>
+</resources>

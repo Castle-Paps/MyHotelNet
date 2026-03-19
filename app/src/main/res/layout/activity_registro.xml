@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F6F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_header"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Únete a HotelNet"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/poppins_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es gratis, siempre."
+            android:textSize="13sp"
+            android:textColor="#AAFFEE"
+            android:fontFamily="@font/poppins_light"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_chip_filter_inactive"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tabLoginLink"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Ingresar"
+                            android:gravity="center"
+                            android:textColor="#999999"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_medium"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Registrarse"
+                            android:gravity="center"
+                            android:textColor="#1A7A6E"
+                            android:textSize="13sp"
+                            android:background="@drawable/bg_tab_login"
+                            android:fontFamily="@font/poppins_semi_bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="8dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre"
+                                android:textSize="11sp"
+                                android:textColor="#888888"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/poppins_medium"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tilNombres"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/tietNombres"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Ana"
+                                    android:singleLine="true"
+                                    android:inputType="textCapWords"
+                                    style="@style/input"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apellido"
+                                android:textSize="11sp"
+                                android:textColor="#888888"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/poppins_medium"/>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tilApellidoPaterno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/tietApellidoPaterno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="García"
+                                    android:singleLine="true"
+                                    android:inputType="textCapWords"
+                                    style="@style/input"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usuario"
+                        android:textSize="11sp"
+                        android:textColor="#888888"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_medium"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tietUsuario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ej: ana123"
+                            android:singleLine="true"
+                            android:inputType="text"
+                            style="@style/input"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contraseña"
+                        android:textSize="11sp"
+                        android:textColor="#888888"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/poppins_medium"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilClave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/plomo">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tietClave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mínimo 4 caracteres"
+                            android:singleLine="true"
+                            android:inputType="textPassword"
+                            style="@style/input"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soy principalmente..."
+                        android:textSize="11sp"
+                        android:textColor="#888888"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/cardViajero"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bg_rol_card_active"
+                            android:layout_marginEnd="8dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/traveler_with_a_suitcase_svgrepo_com"
+                                android:layout_marginBottom="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Viajero"
+                                android:textSize="12sp"
+                                android:textColor="#1A7A6E"
+                                android:fontFamily="@font/poppins_semi_bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cardHotelero"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bg_rol_card_inactive">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/boss_svgrepo_com"
+                                android:layout_marginBottom="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hotelero"
+                                android:textSize="12sp"
+                                android:textColor="#AAAAAA"
+                                android:fontFamily="@font/poppins_medium"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chkTyc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Acepto los términos y condiciones de HotelNet"
+                        android:layout_marginBottom="16dp"
+                        android:button="@drawable/checkbox"
+                        android:paddingStart="8dp"
+                        app:buttonTint="@color/checkbox"
+                        style="@style/output"/>
+
+                    <Button
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="Crear mi cuenta"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:backgroundTint="#1A7A6E"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        app:cornerRadius="14dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ya tienes cuenta? "
+                    android:textSize="13sp"
+                    android:textColor="#888888"
+                    android:fontFamily="@font/poppins_light"/>
+                <TextView
+                    android:id="@+id/tvIrLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inicia sesión"
+                    android:textSize="13sp"
+                    android:textColor="#1A7A6E"
+                    android:fontFamily="@font/poppins_semi_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
